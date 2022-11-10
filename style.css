@@ -41,5 +41,96 @@ nav{
     cursor: pointer;
     color: lightgray;
     font-weight: 400;
-
 }
+.slider{
+    background: url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?cs=srgb&dl=pexels-daniel-absi-952670.jpg&fm=jpg&_gl=1*8fu4sm*_ga*MTA2NTYzNTk4MC4xNjY3OTcwNzI5*_https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ga_8JE65Q40S6*MTY2Nzk3MDczMC4xLjEuMTY2Nzk3MDc0MC4wLjAuMA..);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    position: relative;
+}
+.sliderItam{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slidrBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.buyButten{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    z-index: 1;
+    background-color: black;
+    cursor: pointer;
+}
+.buyButten:hover{
+    background-color: white;
+    color: black;
+}
+.sliderItam:nth-child(1) .slidrBg{
+    background-color: green;
+}
+.sliderItam:nth-child(2) .slidrBg{
+    background-color: rebeccapurple;
+}
+.sliderItam:nth-child(3) .slidrBg{
+    background-color: teal;
+}
+.sliderItam:nth-child(4) .slidrBg{
+    background-color: cornflowerblue;
+}
+.sliderItam:nth-child(5) .slidrBg{
+    background-color: rgb(124, 115, 80);
+}
+
+.sliderItam:nth-child(1) .sliderPrice{
+    color: green;
+}
+.sliderItam:nth-child(2) .sliderPrice{
+    color: rebeccapurple;
+}
+.sliderItam:nth-child(3) .sliderPrice{
+    color: teal;
+}
+.sliderItam:nth-child(4) .sliderPrice{
+    color: cornflowerblue;
+}
+.sliderItam:nth-child(5) .sliderPrice{
+    color: rgb(124, 115, 80);
+}
+
